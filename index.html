@@ -48,7 +48,19 @@
     </div>
   </label>
   
-  <input class='planet7' id='education' type='radio' name='planet'>
+  <input class='planet7' id='services' type='radio' name='planet'>
+  <label class='menu services' for='services'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Services
+      </h2>
+      <h3>What I Offer</h3>
+    </div>
+  </label>
+  
+  <input class='planet6' id='education' type='radio' name='planet'>
   <label class='menu education' for='education'>
     <div class='preview'></div>
     <div class='info'>
@@ -60,7 +72,7 @@
     </div>
   </label>
   
-  <input class='planet6' id='projects' type='radio' name='planet'>
+  <input class='planet5' id='projects' type='radio' name='planet'>
   <label class='menu projects' for='projects'>
     <div class='preview'></div>
     <div class='info'>
@@ -72,7 +84,7 @@
     </div>
   </label>
   
-  <input class='planet5' id='skills' type='radio' name='planet'>
+  <input class='planet4' id='skills' type='radio' name='planet'>
   <label class='menu skills' for='skills'>
     <div class='preview'></div>
     <div class='info'>
@@ -84,7 +96,7 @@
     </div>
   </label>
   
-  <input class='planet4' id='about' type='radio' name='planet'>
+  <input class='planet3' id='about' type='radio' name='planet'>
   <label class='menu about' for='about'>
     <div class='preview'></div>
     <div class='info'>
@@ -96,7 +108,7 @@
     </div>
   </label>
   
-  <input class='planet3' id='home' type='radio' name='planet'>
+  <input class='planet2' id='home' type='radio' name='planet'>
   <label class='menu home' for='home'>
     <div class='preview'></div>
     <div class='info'>
@@ -105,18 +117,6 @@
         Home
       </h2>
       <h3>Welcome</h3>
-    </div>
-  </label>
-  
-  <input class='planet2' id='services' type='radio' name='planet'>
-  <label class='menu services' for='services'>
-    <div class='preview'></div>
-    <div class='info'>
-      <h2>
-        <div class='pip'></div>
-        Services
-      </h2>
-      <h3>What I Offer</h3>
     </div>
   </label>
   
@@ -799,7 +799,7 @@
         const progressContainer = document.createElement('div');
         progressContainer.className = 'planet-progress';
         
-        const planetNames = ['Intro', 'Services', 'Home', 'About', 'Skills', 'Projects', 'Education', 'Experience', 'Contact'];
+        const planetNames = ['Intro', 'Home', 'About', 'Skills', 'Projects', 'Education', 'Experience', 'Services', 'Contact'];
         
         planetNames.forEach((name, index) => {
           const dot = document.createElement('div');
