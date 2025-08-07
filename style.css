@@ -209,9 +209,9 @@ body {
   
   /* Mobile panel adjustments */
   body .panel {
-    width: 280px;
-    right: -280px;
-    padding: 10px 30px 0px 30px;
+    width: 320px;
+    right: -320px;
+    padding: 15px 25px 15px 25px;
   }
   
   body .panel h1 {
@@ -290,9 +290,9 @@ body {
   }
   
   body .panel {
-    width: 260px;
-    right: -260px;
-    padding: 10px 20px 0px 20px;
+    width: 300px;
+    right: -300px;
+    padding: 15px 20px 15px 20px;
   }
   
   body .logo {
@@ -2552,14 +2552,17 @@ body .solar_systm .planet_description a span {
 body .panel {
   position: absolute;
   right: -520px;
-  width: 300px;
+  width: 400px;
   top: 0;
   height: 100vh;
   transition: all 0.2s;
   color: white;
   background: #1a1a1a;
-  padding: 10px 60px 0px 60px;
-  overflow: scroll;
+  padding: 20px 40px 20px 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 body .panel body::-webkit-scrollbar {
   width: 1em;
@@ -2594,6 +2597,8 @@ body .panel h1 {
   padding: 49px 0 0 0;
   width: 100%;
   font-size: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 body .panel h1::after {
   width: 30px;
@@ -2622,6 +2627,9 @@ body .panel p {
   color: #cccccc;
   font-size: 12px;
   line-height: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 15px;
 }
 
 /* Bright Sun styling for Intro planet */
