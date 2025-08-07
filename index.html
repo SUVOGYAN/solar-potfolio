@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Suvogyan's Portfolio | Creative Developer</title>
+</head>
+<body>
+  <!-- Planet Tooltip (Hidden by default) -->
+  <div class="planet-tooltip" id="planetTooltip">
+    <h3></h3>
+    <p></p>
+    <div class="tooltip-stats">
+      <span class="distance"></span>
+      <span class="diameter"></span>
+    </div>
+  </div>
+
+  <h1 class='logo'>
+  Suvogyan's Portfolio
+  <span>Creative Developer</span>
+</h1>
+  
+  <!-- Navigation Menu -->
+  <input class='planet9' id='contact' type='radio' name='planet'>
+  <label class='menu contact' for='contact'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Contact
+      </h2>
+      <h3>Let's Connect</h3>
+    </div>
+  </label>
+  
+  <input class='planet8' id='experience' type='radio' name='planet'>
+  <label class='menu experience' for='experience'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Experience
+      </h2>
+      <h3>Work History</h3>
+    </div>
+  </label>
+  
+  <input class='planet7' id='education' type='radio' name='planet'>
+  <label class='menu education' for='education'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Education
+      </h2>
+      <h3>Academic Journey</h3>
+    </div>
+  </label>
+  
+  <input class='planet6' id='projects' type='radio' name='planet'>
+  <label class='menu projects' for='projects'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Projects
+      </h2>
+      <h3>Creative Work</h3>
+    </div>
+  </label>
+  
+  <input class='planet5' id='skills' type='radio' name='planet'>
+  <label class='menu skills' for='skills'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Skills
+      </h2>
+      <h3>Technologies</h3>
+    </div>
+  </label>
+  
+  <input class='planet4' id='about' type='radio' name='planet'>
+  <label class='menu about' for='about'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        About
+      </h2>
+      <h3>Who I Am</h3>
+    </div>
+  </label>
+  
+  <input class='planet3' id='home' type='radio' name='planet'>
+  <label class='menu home' for='home'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Home
+      </h2>
+      <h3>Welcome</h3>
+    </div>
+  </label>
+  
+  <input class='planet2' id='services' type='radio' name='planet'>
+  <label class='menu services' for='services'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Services
+      </h2>
+      <h3>What I Offer</h3>
+    </div>
+  </label>
+  
+  <input class='planet1' id='intro' type='radio' name='planet' checked='checked'>
+  <label class='menu intro' for='intro'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Intro
+      </h2>
+      <h3>Hello World</h3>
+    </div>
+  </label>
+
+  <!-- Solar System Container -->
+  <div class='solar'>
+    <div class='solar_systm'>
+      <div class='intro planet'>
+        <div class='intro planet_description'>
+          <h2>Welcome</h2>
+          <h1>Hello World</h1>
+          <p>Welcome to my creative universe! I'm a passionate developer who loves turning ideas into beautiful digital experiences. Let's explore my portfolio together.</p>
+          <label for='readIntro'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='mercury planet'>
+        <div class='planet_description services'>
+          <h2>Services</h2>
+          <h1>What I Offer</h1>
+          <p>From web development to mobile apps, I provide comprehensive digital solutions that bring your vision to life with modern technologies and creative design.</p>
+          <label for='readServices'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='earth planet'>
+        <div class='moon moon'>
+          <h3>Portfolio</h3>
+          <h2>Showcase</h2>
+        </div>
+        <div class='m trajectory'></div>
+        <div class='earth planet_description'>
+          <h2>Portfolio</h2>
+          <h1>Creative Showcase</h1>
+          <p>Welcome to my digital portfolio! I'm a creative developer passionate about building innovative web experiences and turning complex problems into elegant solutions.</p>
+          <label for='readHome'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='mars planet'>
+        <div class='deimos moon'>
+          <h3>Passion</h3>
+          <h2>Innovation</h2>
+        </div>
+        <div class='d trajectory'></div>
+        <div class='moon phoebos'>
+          <h3>Drive</h3>
+          <h2>Excellence</h2>
+        </div>
+        <div class='p trajectory'></div>
+        <div class='mars planet_description'>
+          <h2>About Me</h2>
+          <h1>Who I Am</h1>
+          <p>I'm a creative developer with a passion for building beautiful, functional, and user-centered digital experiences. I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.</p>
+          <label for='readAbout'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='jupiter planet'>
+        <div class='lo moon'>
+          <h3>Frontend</h3>
+          <h2>React</h2>
+        </div>
+        <div class='europa moon'>
+          <h3>Backend</h3>
+          <h2>Node.js</h2>
+        </div>
+        <div class='ganymede moon'>
+          <h3>Design</h3>
+          <h2>UI/UX</h2>
+        </div>
+        <div class='lop trajectory'></div>
+        <div class='eu trajectory'></div>
+        <div class='ga trajectory'></div>
+        <div class='jupiter planet_description'>
+          <h2>Skills</h2>
+          <h1>Technologies</h1>
+          <p>My technical toolkit includes modern web technologies, design principles, and development methodologies. I'm constantly learning and adapting to new technologies to deliver the best solutions.</p>
+          <label for='readSkills'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='saturn planet'>
+        <div class='moon titan'>
+          <h3>Web App</h3>
+          <h2>E-Commerce</h2>
+        </div>
+        <div class='dione moon'>
+          <h3>Mobile</h3>
+          <h2>React Native</h2>
+        </div>
+        <div class='enceladus moon'>
+          <h3>Design</h3>
+          <h2>UI/UX</h2>
+        </div>
+        <div class='ti trajectory'></div>
+        <div class='di trajectory'></div>
+        <div class='enc trajectory'></div>
+        <div class='planet_description saturn'>
+          <h2>Projects</h2>
+          <h1>Creative Work</h1>
+          <p>From concept to deployment, I've worked on a variety of projects that showcase my skills in web development, mobile apps, and creative design solutions.</p>
+          <label for='readProjects'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='uranus planet'>
+        <div class='miranda moon'>
+          <h3>Degree</h3>
+          <h2>Computer Science</h2>
+        </div>
+        <div class='ariel moon'>
+          <h3>Certifications</h3>
+          <h2>Professional</h2>
+        </div>
+        <div class='moon umbriel'>
+          <h3>Learning</h3>
+          <h2>Continuous</h2>
+        </div>
+        <div class='mir trajectory'></div>
+        <div class='ari trajectory'></div>
+        <div class='trajectory umb'></div>
+        <div class='planet_description uranus'>
+          <h2>Education</h2>
+          <h1>Academic Journey</h1>
+          <p>My educational background provides a strong foundation in computer science principles, while continuous learning keeps me updated with the latest technologies and industry trends.</p>
+          <label for='readEducation'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='neptune planet'>
+        <div class='moon triton'>
+          <h3>Senior</h3>
+          <h2>Developer</h2>
+        </div>
+        <div class='moon proteus'>
+          <h3>Team Lead</h3>
+          <h2>Project Manager</h2>
+        </div>
+        <div class='moon nereid'>
+          <h3>Freelance</h3>
+          <h2>Consultant</h2>
+        </div>
+        <div class='trajectory tri'></div>
+        <div class='pro trajectory'></div>
+        <div class='ner trajectory'></div>
+        <div class='neptune planet_description'>
+          <h2>Experience</h2>
+          <h1>Work History</h1>
+          <p>With years of experience in the tech industry, I've worked on diverse projects ranging from startups to enterprise solutions, always focusing on delivering quality and innovation.</p>
+          <label for='readExperience'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='pluto planet'>
+        <div class='planet_description pluto'>
+          <h2>Contact</h2>
+          <h1>Let's Connect</h1>
+          <p>Ready to start a project or just want to chat? I'm always open to discussing new opportunities and creative collaborations.</p>
+          <label for='readContact'>
+            <a>
+              Get In Touch
+              <span>!</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail Panels -->
+  <input class='read' id='readIntro' type='radio' name='introRead'>
+  <label class='closeBig' for='closeIntro'></label>
+  <input class='read' id='closeIntro' type='radio' name='introRead'>
+  <div class='panel'>
+    <h1>Hello World</h1>
+    <p>Welcome to my creative universe! I'm a passionate developer who loves turning ideas into beautiful digital experiences. With a background in both design and development, I bridge the gap between aesthetics and functionality.</p>
+    <p>My journey in technology started with curiosity and has evolved into a passion for creating meaningful digital solutions. I believe that great software should not only work flawlessly but also provide an enjoyable and intuitive user experience.</p>
+    <img src='https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80'>
+    <h2>Creative Problem Solver</h2>
+    <p>I approach every project as a unique challenge, combining technical expertise with creative thinking to deliver solutions that exceed expectations. Whether it's a simple website or a complex web application, I ensure that every detail is carefully considered.</p>
+    <h2>User-Centered Design</h2>
+    <p>My work is guided by the principle that technology should serve people, not the other way around. I focus on creating experiences that are not only functional but also delightful to use.</p>
+    <h2>Continuous Learning</h2>
+    <p>The tech world evolves rapidly, and I'm committed to staying at the forefront of new technologies and methodologies. This commitment to learning ensures that I can always offer the best solutions to my clients.</p>
+    <br>
+  </div>
+
+  <input class='read' id='readServices' type='radio' name='servicesRead'>
+  <label class='closeBig' for='closeServices'></label>
+  <input class='read' id='closeServices' type='radio' name='servicesRead'>
+  <div class='panel'>
+    <h1>Services</h1>
+    <p>I offer comprehensive digital solutions tailored to meet your specific needs. From initial concept to final deployment, I work closely with clients to ensure their vision becomes reality.</p>
+    <p>My services encompass the full spectrum of modern web development, including responsive design, e-commerce solutions, custom web applications, and mobile app development. I believe in building long-term relationships with clients based on trust, quality, and results.</p>
+    <img src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80'>
+    <h2>Web Development</h2>
+    <p>Custom websites and web applications built with modern technologies. I focus on creating fast, secure, and scalable solutions that provide excellent user experiences across all devices.</p>
+    <h2>Mobile Development</h2>
+    <p>Native and cross-platform mobile applications that work seamlessly on iOS and Android. I use React Native and other modern frameworks to deliver high-performance mobile solutions.</p>
+    <h2>UI/UX Design</h2>
+    <p>User-centered design that combines aesthetics with functionality. I create intuitive interfaces that guide users through their journey while achieving business objectives.</p>
+    <h2>Consulting</h2>
+    <p>Technical consulting to help you make informed decisions about your digital strategy. From technology selection to architecture planning, I provide expert guidance.</p>
+    <br>
+  </div>
+
+  <input class='read' id='readHome' type='radio' name='homeRead'>
+  <label class='closeBig' for='closeHome'></label>
+  <input class='read' id='closeHome' type='radio' name='homeRead'>
+  <div class='panel'>
+    <h1>Creative Showcase</h1>
+    <p>Welcome to my digital portfolio! I'm a creative developer passionate about building innovative web experiences and turning complex problems into elegant solutions.</p>
+    <p>With expertise in modern web technologies and a keen eye for design, I create digital experiences that not only look great but also perform exceptionally well. My work spans from simple landing pages to complex web applications, always with a focus on user experience and technical excellence.</p>
+    <img src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'>
+    <h2>Innovation Meets Functionality</h2>
+    <p>I believe that the best digital products are those that seamlessly blend innovative design with robust functionality. Every project I work on is an opportunity to push boundaries and create something truly special.</p>
+    <h2>Performance Focused</h2>
+    <p>In today's fast-paced digital world, performance is crucial. I optimize every aspect of my work to ensure lightning-fast loading times and smooth user experiences.</p>
+    <h2>Future-Ready Solutions</h2>
+    <p>I build with the future in mind, using scalable architectures and modern technologies that can grow and adapt as your business evolves.</p>
+    <br>
+  </div>
+
+  <input class='read' id='readAbout' type='radio' name='aboutRead'>
+  <label class='closeBig' for='closeAbout'></label>
+  <input class='read' id='closeAbout' type='radio' name='aboutRead'>
+  <div class='panel'>
+    <h1>About Me</h1>
+    <p>I'm a creative developer with a passion for building beautiful, functional, and user-centered digital experiences. I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.</p>
+    <p>My journey in technology began with a curiosity about how things work, which evolved into a passion for creating meaningful digital solutions. I've worked with clients ranging from startups to established businesses, always focusing on delivering value and exceeding expectations.</p>
+    <img src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'>
+    <h2>Passion for Innovation</h2>
+    <p>I'm constantly exploring new technologies and methodologies to stay at the cutting edge of web development. This passion for innovation drives me to create solutions that are not only current but also future-proof.</p>
+    <h2>Collaborative Approach</h2>
+    <p>I believe that the best results come from close collaboration with clients. I work as an extension of your team, understanding your goals and translating them into effective digital solutions.</p>
+    <h2>Quality Over Quantity</h2>
+    <p>Every project I take on receives my full attention and dedication. I believe in doing fewer things exceptionally well rather than many things adequately.</p>
+    <br>
+  </div>
+
+  <input class='read' id='readSkills' type='radio' name='skillsRead'>
+  <label class='closeBig' for='closeSkills'></label>
+  <input class='read' id='closeSkills' type='radio' name='skillsRead'>
+  <div class='panel'>
+    <h1>Skills & Technologies</h1>
+    <p>My technical toolkit includes modern web technologies, design principles, and development methodologies. I'm constantly learning and adapting to new technologies to deliver the best solutions.</p>
+    <p>I specialize in full-stack development with a focus on modern JavaScript frameworks, responsive design, and scalable architectures. My expertise spans from frontend development to backend systems and everything in between.</p>
+    <img src='https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80'>
+    <h2>Frontend Development</h2>
+    <p>React, Vue.js, Angular, TypeScript, HTML5, CSS3, SASS, JavaScript (ES6+), Responsive Design, Progressive Web Apps, Performance Optimization</p>
+    <h2>Backend Development</h2>
+    <p>Node.js, Express, Python, Django, RESTful APIs, GraphQL, Database Design, Authentication & Authorization, Server Architecture</p>
+    <h2>Design & UX</h2>
+    <p>UI/UX Design, Figma, Adobe Creative Suite, Design Systems, User Research, Prototyping, Accessibility, Mobile-First Design</p>
+    <h2>Tools & Platforms</h2>
+    <p>Git, Docker, AWS, Vercel, Netlify, CI/CD, Testing (Jest, Cypress), Agile Methodologies, Project Management</p>
+    <br>
+  </div>
+
+  <input class='read' id='readProjects' type='radio' name='projectsRead'>
+  <label class='closeBig' for='closeProjects'></label>
+  <input class='read' id='closeProjects' type='radio' name='projectsRead'>
+  <div class='panel'>
+    <h1>Projects</h1>
+    <p>From concept to deployment, I've worked on a variety of projects that showcase my skills in web development, mobile apps, and creative design solutions.</p>
+    <p>Each project represents a unique challenge and opportunity to create something meaningful. I believe in building solutions that not only meet technical requirements but also provide real value to users and businesses.</p>
+    <img src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80'>
+    <h2>E-Commerce Platform</h2>
+    <p>A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, inventory management, and responsive design.</p>
+    <h2>Task Management App</h2>
+    <p>A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features. Built with React and Socket.io.</p>
+    <h2>Mobile Fitness App</h2>
+    <p>A React Native application for tracking workouts and nutrition. Includes GPS tracking, social features, and integration with wearable devices.</p>
+    <h2>Portfolio Website</h2>
+    <p>A creative portfolio website (like this one!) showcasing innovative design and smooth animations. Built with pure CSS and JavaScript.</p>
+    <br>
+  </div>
+
+  <input class='read' id='readEducation' type='radio' name='educationRead'>
+  <label class='closeBig' for='closeEducation'></label>
+  <input class='read' id='closeEducation' type='radio' name='educationRead'>
+  <div class='panel'>
+    <h1>Education</h1>
+    <p>My educational background provides a strong foundation in computer science principles, while continuous learning keeps me updated with the latest technologies and industry trends.</p>
+    <p>I believe that education is a lifelong journey, especially in the fast-evolving tech industry. I'm committed to continuous learning through formal education, online courses, and hands-on experience.</p>
+    <img src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80'>
+    <h2>Bachelor's in Computer Science</h2>
+    <p>Graduated with honors from a top-tier university, focusing on software engineering, algorithms, and data structures. Completed coursework in web development, mobile computing, and user interface design.</p>
+    <h2>Professional Certifications</h2>
+    <p>Certified in various technologies including AWS Solutions Architect, Google Cloud Platform, and multiple frontend and backend development certifications from leading platforms.</p>
+    <h2>Continuous Learning</h2>
+    <p>Regular participation in online courses, workshops, and conferences to stay current with emerging technologies and industry best practices.</p>
+    <br>
+  </div>
+
+  <input class='read' id='readExperience' type='radio' name='experienceRead'>
+  <label class='closeBig' for='closeExperience'></label>
+  <input class='read' id='closeExperience' type='radio' name='experienceRead'>
+  <div class='panel'>
+    <h1>Experience</h1>
+    <p>With years of experience in the tech industry, I've worked on diverse projects ranging from startups to enterprise solutions, always focusing on delivering quality and innovation.</p>
+    <p>My professional journey has taken me through various roles and industries, each contributing to my growth as a developer and problem solver. I've learned that success comes from combining technical expertise with business understanding.</p>
+    <img src='https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'>
+    <h2>Senior Full-Stack Developer</h2>
+    <p>Led development teams in creating scalable web applications for enterprise clients. Managed project timelines, mentored junior developers, and implemented best practices for code quality and deployment.</p>
+    <h2>Technical Lead</h2>
+    <p>Oversaw technical architecture decisions, code reviews, and team collaboration. Worked closely with product managers to translate business requirements into technical solutions.</p>
+    <h2>Freelance Consultant</h2>
+    <p>Provided technical consulting services to startups and small businesses, helping them choose the right technologies and build effective digital solutions.</p>
+    <br>
+  </div>
+
+  <input class='read' id='readContact' type='radio' name='contactRead'>
+  <label class='closeBig' for='closeContact'></label>
+  <input class='read' id='closeContact' type='radio' name='contactRead'>
+  <div class='panel'>
+    <h1>Contact</h1>
+    <p>Ready to start a project or just want to chat? I'm always open to discussing new opportunities and creative collaborations.</p>
+    <p>Whether you have a specific project in mind or just want to explore possibilities, I'd love to hear from you. Let's discuss how we can work together to bring your ideas to life.</p>
+    <img src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'>
+    <h2>Let's Connect</h2>
+    <p>Email: suvogyanchakraborty@gmail.com<br>
+    Phone: +91 9883573290<br>
+    Location: India</p>
+    <h2>Social Media</h2>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/suvogyan-chakraborty-0585992b6/" target="_blank">linkedin.com/in/suvogyan-chakraborty-0585992b6/</a><br>
+    GitHub: github.com/suvogyan<br>
+    Portfolio: This Solar System Portfolio</p>
+    <h2>Availability</h2>
+    <p>I'm currently available for freelance projects and full-time opportunities. I'm open to both remote and on-site work arrangements.</p>
+    <br>
+  </div>
+
+  <!-- Progressive Enhancement JavaScript -->
+  <script>
+    // Portfolio data for enhanced interactions
+    const portfolioData = {
+      intro: {
+        name: "Hello World",
+        description: "Welcome to my creative universe! I'm a passionate developer who loves turning ideas into beautiful digital experiences.",
+        category: "Welcome",
+        status: "Active"
+      },
+      services: {
+        name: "Services",
+        description: "From web development to mobile apps, I provide comprehensive digital solutions that bring your vision to life.",
+        category: "What I Offer",
+        status: "Available"
+      },
+      home: {
+        name: "Portfolio",
+        description: "Welcome to my digital portfolio! I'm a creative developer passionate about building innovative web experiences.",
+        category: "Showcase",
+        status: "Live"
+      },
+      about: {
+        name: "About Me",
+        description: "I'm a creative developer with a passion for building beautiful, functional, and user-centered digital experiences.",
+        category: "Who I Am",
+        status: "Active"
+      },
+      skills: {
+        name: "Skills",
+        description: "My technical toolkit includes modern web technologies, design principles, and development methodologies.",
+        category: "Technologies",
+        status: "Current"
+      },
+      projects: {
+        name: "Projects",
+        description: "From concept to deployment, I've worked on a variety of projects that showcase my skills and creativity.",
+        category: "Creative Work",
+        status: "Portfolio"
+      },
+      education: {
+        name: "Education",
+        description: "My educational background provides a strong foundation in computer science principles and continuous learning.",
+        category: "Academic Journey",
+        status: "Ongoing"
+      },
+      experience: {
+        name: "Experience",
+        description: "With years of experience in the tech industry, I've worked on diverse projects and delivered quality solutions.",
+        category: "Work History",
+        status: "Professional"
+      },
+      contact: {
+        name: "Contact",
+        description: "Ready to start a project or just want to chat? I'm always open to discussing new opportunities.",
+        category: "Let's Connect",
+        status: "Available"
+      }
+    };
+
+    // Enhanced functionality
+    class PortfolioEnhancer {
+      constructor() {
+        this.currentSection = 0;
+        this.planets = document.querySelectorAll('input[name="planet"]');
+        this.planetLabels = document.querySelectorAll('.menu');
+        this.tooltip = document.getElementById('planetTooltip');
+        this.isScrolling = false;
+        this.scrollTimeout = null;
+        
+        this.init();
+      }
+
+      init() {
+        // Add event listeners
+        this.addEventListeners();
+        
+        // Initialize tooltip
+        this.initTooltip();
+        
+        // Add smooth transitions
+        this.addSmoothTransitions();
+      }
+
+      addEventListeners() {
+        // Section hover effects
+        this.planetLabels.forEach((label, index) => {
+          const sectionName = label.className.split(' ')[1];
+          const sectionInfo = portfolioData[sectionName];
+          
+          if (sectionInfo) {
+            label.addEventListener('mouseenter', (e) => this.showTooltip(e, sectionInfo));
+            label.addEventListener('mouseleave', () => this.hideTooltip());
+            label.addEventListener('mousemove', (e) => this.moveTooltip(e));
+          }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => this.handleKeyboard(e));
+
+        // Scroll navigation
+        this.addScrollSupport();
+
+        // Touch/mobile support
+        this.addTouchSupport();
+      }
+
+      showTooltip(event, sectionInfo) {
+        this.tooltip.querySelector('h3').textContent = sectionInfo.name;
+        this.tooltip.querySelector('p').textContent = sectionInfo.description;
+        this.tooltip.querySelector('.distance').textContent = `Category: ${sectionInfo.category}`;
+        this.tooltip.querySelector('.diameter').textContent = `Status: ${sectionInfo.status}`;
+        
+        this.tooltip.style.display = 'block';
+        this.moveTooltip(event);
+      }
+
+      hideTooltip() {
+        this.tooltip.style.display = 'none';
+      }
+
+      moveTooltip(event) {
+        const tooltip = this.tooltip;
+        const rect = tooltip.getBoundingClientRect();
+        const x = event.clientX + 15;
+        const y = event.clientY - rect.height - 10;
+        
+        // Keep tooltip within viewport
+        const maxX = window.innerWidth - rect.width - 10;
+        const maxY = window.innerHeight - rect.height - 10;
+        
+        tooltip.style.left = Math.min(x, maxX) + 'px';
+        tooltip.style.top = Math.max(y, 10) + 'px';
+      }
+
+      handleKeyboard(event) {
+        switch(event.key) {
+          case 'ArrowLeft':
+            event.preventDefault();
+            this.navigateSection(-1);
+            break;
+          case 'ArrowRight':
+            event.preventDefault();
+            this.navigateSection(1);
+            break;
+        }
+      }
+
+      navigateSection(direction) {
+        const currentIndex = Array.from(this.planets).findIndex(planet => planet.checked);
+        const newIndex = (currentIndex + direction + this.planets.length) % this.planets.length;
+        
+        // Prevent rapid scrolling
+        if (this.isScrolling) return;
+        
+        this.isScrolling = true;
+        
+        // Uncheck current planet
+        this.planets[currentIndex].checked = false;
+        
+        // Check new planet
+        this.planets[newIndex].checked = true;
+        this.planets[newIndex].dispatchEvent(new Event('change'));
+        
+        // Add smooth transition effect
+        this.addTransitionEffect();
+        
+        // Update current section
+        this.currentSection = newIndex;
+        
+        // Update progress dots
+        this.updateProgressDots();
+        
+        // Debounce scroll events with longer delay
+        clearTimeout(this.scrollTimeout);
+        this.scrollTimeout = setTimeout(() => {
+          this.isScrolling = false;
+        }, 600);
+      }
+
+      addTransitionEffect() {
+        const solar = document.querySelector('.solar');
+        solar.style.transition = 'transform 0.5s ease-in-out';
+        
+        // Add a subtle scale effect
+        solar.style.transform = 'scale(1.02)';
+        setTimeout(() => {
+          solar.style.transform = 'scale(1)';
+        }, 200);
+      }
+
+      addSmoothTransitions() {
+        // Add smooth transitions to section labels
+        this.planetLabels.forEach(label => {
+          label.style.transition = 'all 0.3s ease';
+        });
+      }
+
+      addScrollSupport() {
+        // Add scroll wheel support for planet navigation
+        let scrollTimeout;
+        let isScrolling = false;
+        
+        document.addEventListener('wheel', (e) => {
+          e.preventDefault();
+          
+          if (isScrolling) return;
+          
+          isScrolling = true;
+          
+          // Determine scroll direction
+          const direction = e.deltaY > 0 ? 1 : -1;
+          
+          // Navigate to next/previous planet
+          this.navigateSection(direction);
+          
+          // Debounce scroll events with longer delay
+          clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(() => {
+            isScrolling = false;
+          }, 800);
+        }, { passive: false });
+        
+        // Add scroll indicator
+        this.addScrollIndicator();
+      }
+
+      addScrollIndicator() {
+        // Create scroll indicator
+        const indicator = document.createElement('div');
+        indicator.className = 'scroll-indicator';
+        indicator.innerHTML = `
+          <div class="scroll-text">Scroll to navigate planets</div>
+          <div class="scroll-arrow">↓</div>
+        `;
+        document.body.appendChild(indicator);
+        
+        // Create planet progress indicator
+        this.createPlanetProgress();
+        
+        // Hide indicator after first scroll
+        let hasScrolled = false;
+        document.addEventListener('wheel', () => {
+          if (!hasScrolled) {
+            hasScrolled = true;
+            indicator.style.opacity = '0';
+            setTimeout(() => {
+              indicator.remove();
+            }, 1000);
+          }
+        });
+      }
+
+      createPlanetProgress() {
+        // Create planet progress dots
+        const progressContainer = document.createElement('div');
+        progressContainer.className = 'planet-progress';
+        
+        const planetNames = ['Intro', 'Services', 'Home', 'About', 'Skills', 'Projects', 'Education', 'Experience', 'Contact'];
+        
+        planetNames.forEach((name, index) => {
+          const dot = document.createElement('div');
+          dot.className = 'progress-dot';
+          dot.setAttribute('data-planet', index);
+          dot.title = name;
+          progressContainer.appendChild(dot);
+        });
+        
+        document.body.appendChild(progressContainer);
+        
+        // Update active dot
+        this.updateProgressDots();
+      }
+
+      updateProgressDots() {
+        const dots = document.querySelectorAll('.progress-dot');
+        const currentIndex = Array.from(this.planets).findIndex(planet => planet.checked);
+        
+        dots.forEach((dot, index) => {
+          dot.classList.remove('active');
+          if (index === currentIndex) {
+            dot.classList.add('active');
+          }
+        });
+      }
+
+      addTouchSupport() {
+        // Add touch support for mobile devices
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchStartTime = 0;
+        
+        document.addEventListener('touchstart', (e) => {
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+          touchStartTime = Date.now();
+        });
+        
+        document.addEventListener('touchend', (e) => {
+          const touchEndX = e.changedTouches[0].clientX;
+          const touchEndY = e.changedTouches[0].clientY;
+          const touchEndTime = Date.now();
+          const diffX = touchStartX - touchEndX;
+          const diffY = touchStartY - touchEndY;
+          const touchDuration = touchEndTime - touchStartTime;
+          
+          // Swipe left/right to navigate sections (with improved sensitivity)
+          if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 30 && touchDuration < 500) {
+            if (diffX > 0) {
+              this.navigateSection(1);
+            } else {
+              this.navigateSection(-1);
+            }
+          }
+          
+          // Tap to select planet (if tapping on a planet label)
+          if (Math.abs(diffX) < 10 && Math.abs(diffY) < 10 && touchDuration < 300) {
+            const touchElement = document.elementFromPoint(touchStartX, touchStartY);
+            if (touchElement && touchElement.closest('label.menu')) {
+              const planetIndex = Array.from(this.planetLabels).indexOf(touchElement.closest('label.menu'));
+              if (planetIndex !== -1) {
+                this.planets[planetIndex].checked = true;
+                this.updateProgressDots();
+              }
+            }
+          }
+        });
+        
+        // Prevent zoom on double tap
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', (e) => {
+          const now = Date.now();
+          if (now - lastTouchEnd <= 300) {
+            e.preventDefault();
+          }
+          lastTouchEnd = now;
+        }, false);
+      }
+
+      initTooltip() {
+        this.tooltip.style.display = 'none';
+      }
+    }
+
+    // Initialize enhancements when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      // Only initialize if JavaScript is available
+      if (typeof PortfolioEnhancer !== 'undefined') {
+        new PortfolioEnhancer();
+      }
+    });
+
+    // Add loading state
+    window.addEventListener('load', () => {
+      document.body.classList.add('js-enhanced');
+    });
+  </script>
+</body>
+</html>
+
+
