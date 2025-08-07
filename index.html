@@ -684,27 +684,30 @@
         
         this.isScrolling = true;
         
-        // Uncheck current planet
-        this.planets[currentIndex].checked = false;
+        // Add a longer pause before transition
+        setTimeout(() => {
+          // Uncheck current planet
+          this.planets[currentIndex].checked = false;
+          
+          // Check new planet
+          this.planets[newIndex].checked = true;
+          this.planets[newIndex].dispatchEvent(new Event('change'));
+          
+          // Add smooth transition effect
+          this.addTransitionEffect();
+          
+          // Update current section
+          this.currentSection = newIndex;
+          
+          // Update progress dots
+          this.updateProgressDots();
+        }, 200); // 200ms pause before transition
         
-        // Check new planet
-        this.planets[newIndex].checked = true;
-        this.planets[newIndex].dispatchEvent(new Event('change'));
-        
-        // Add smooth transition effect
-        this.addTransitionEffect();
-        
-        // Update current section
-        this.currentSection = newIndex;
-        
-        // Update progress dots
-        this.updateProgressDots();
-        
-        // Debounce scroll events with longer delay
+        // Much longer debounce for smoother experience
         clearTimeout(this.scrollTimeout);
         this.scrollTimeout = setTimeout(() => {
           this.isScrolling = false;
-        }, 600);
+        }, 2000); // Increased to 2 seconds
       }
 
       addTransitionEffect() {
@@ -729,25 +732,36 @@
         // Add scroll wheel support for planet navigation
         let scrollTimeout;
         let isScrolling = false;
+        let scrollAccumulator = 0;
+        const scrollThreshold = 100; // Increased threshold for more deliberate scrolling
         
         document.addEventListener('wheel', (e) => {
           e.preventDefault();
           
-          if (isScrolling) return;
+          // Accumulate scroll delta
+          scrollAccumulator += e.deltaY;
           
-          isScrolling = true;
-          
-          // Determine scroll direction
-          const direction = e.deltaY > 0 ? 1 : -1;
-          
-          // Navigate to next/previous planet
-          this.navigateSection(direction);
-          
-          // Debounce scroll events with longer delay
-          clearTimeout(scrollTimeout);
-          scrollTimeout = setTimeout(() => {
-            isScrolling = false;
-          }, 800);
+          // Only trigger navigation if threshold is met
+          if (Math.abs(scrollAccumulator) >= scrollThreshold) {
+            if (isScrolling) return;
+            
+            isScrolling = true;
+            
+            // Determine scroll direction
+            const direction = scrollAccumulator > 0 ? 1 : -1;
+            
+            // Navigate to next/previous planet
+            this.navigateSection(direction);
+            
+            // Reset accumulator
+            scrollAccumulator = 0;
+            
+            // Much longer debounce for smoother experience
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+              isScrolling = false;
+            }, 1500); // Increased to 1.5 seconds
+          }
         }, { passive: false });
         
         // Add scroll indicator
@@ -833,8 +847,8 @@
           const diffY = touchStartY - touchEndY;
           const touchDuration = touchEndTime - touchStartTime;
           
-          // Swipe left/right to navigate sections (with improved sensitivity)
-          if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 30 && touchDuration < 500) {
+          // Swipe left/right to navigate sections (with increased threshold for more deliberate swipes)
+          if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 80 && touchDuration < 800) {
             if (diffX > 0) {
               this.navigateSection(1);
             } else {
@@ -843,7 +857,7 @@
           }
           
           // Tap to select planet (if tapping on a planet label)
-          if (Math.abs(diffX) < 10 && Math.abs(diffY) < 10 && touchDuration < 300) {
+          if (Math.abs(diffX) < 15 && Math.abs(diffY) < 15 && touchDuration < 400) {
             const touchElement = document.elementFromPoint(touchStartX, touchStartY);
             if (touchElement && touchElement.closest('label.menu')) {
               const planetIndex = Array.from(this.planetLabels).indexOf(touchElement.closest('label.menu'));
