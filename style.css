@@ -209,8 +209,8 @@ body {
   
   /* Mobile panel adjustments */
   body .panel {
-    width: 320px;
-    right: -320px;
+    width: 350px;
+    right: -350px;
     padding: 15px 25px 15px 25px;
   }
   
@@ -291,8 +291,8 @@ body {
   }
   
   body .panel {
-    width: 300px;
-    right: -300px;
+    width: 320px;
+    right: -320px;
     padding: 15px 20px 15px 20px;
   }
   
@@ -2612,8 +2612,8 @@ body .solar_systm .planet_description {
 }
 body .panel {
   position: absolute;
-  right: -520px;
-  width: 400px;
+  right: -450px;
+  width: 450px;
   top: 0;
   height: 100vh;
   transition: all 0.2s;
