@@ -2458,8 +2458,9 @@ body .solar_systm .planet_description {
   text-transform: uppercase;
   padding: 20px;
   box-sizing: border-box;
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
 }
 body .solar_systm .planet_description.mercury a {
   color: #ff8c42;
@@ -2514,6 +2515,22 @@ body .solar_systm .planet_description.pluto a {
 }
 body .solar_systm .planet_description.pluto h2 {
   color: #ffcc99;
+}
+
+/* Ensure contact planet description is always visible */
+body .solar_systm .planet_description.pluto {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+body .solar_systm .planet_description.pluto h1,
+body .solar_systm .planet_description.pluto h2,
+body .solar_systm .planet_description.pluto p,
+body .solar_systm .planet_description.pluto a {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
 }
 body .solar_systm .planet_description h1,
 body .solar_systm .planet_description h2,
