@@ -121,6 +121,17 @@
 /* Enhanced scroll navigation */
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling for the solar system */
+.solar {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Improve planet transitions */
+.solar_systm .planet {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Planet Progress Indicator */

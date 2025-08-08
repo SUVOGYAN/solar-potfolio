@@ -191,14 +191,21 @@
           <h2>About Me</h2>
           <h1>Who I Am</h1>
           <p>I'm a creative developer with a passion for building beautiful, functional, and user-centered digital experiences. I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.</p>
-          <label for='readAbout'>
-            <a>
-              Read Mor
-              <span>e</span>
-            </a>
-          </label>
         </div>
-        <div class='overlay'></div>
+        <div class='overlay'>
+          <div class='overlay-content'>
+            <h1>About Me</h1>
+            <p>I'm a creative developer with a passion for building beautiful, functional, and user-centered digital experiences. I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.</p>
+            <p>My journey in technology began with a curiosity about how things work, which evolved into a passion for creating meaningful digital solutions. I've worked with clients ranging from startups to established businesses, always focusing on delivering value and exceeding expectations.</p>
+            <img src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'>
+            <h2>Passion for Innovation</h2>
+            <p>I'm constantly exploring new technologies and methodologies to stay at the cutting edge of web development. This passion for innovation drives me to create solutions that are not only current but also future-proof.</p>
+            <h2>Collaborative Approach</h2>
+            <p>I believe that the best results come from close collaboration with clients. I work as an extension of your team, understanding your goals and translating them into effective digital solutions.</p>
+            <h2>Quality Over Quantity</h2>
+            <p>Every project I take on receives my full attention and dedication. I believe in doing fewer things exceptionally well rather than many things adequately.</p>
+          </div>
+        </div>
       </div>
     </div>
     
@@ -419,22 +426,7 @@
     <br>
   </div>
 
-  <input class='read' id='readAbout' type='radio' name='aboutRead'>
-  <label class='closeBig' for='closeAbout'></label>
-  <input class='read' id='closeAbout' type='radio' name='aboutRead'>
-  <div class='panel'>
-    <h1>About Me</h1>
-    <p>I'm a creative developer with a passion for building beautiful, functional, and user-centered digital experiences. I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.</p>
-    <p>My journey in technology began with a curiosity about how things work, which evolved into a passion for creating meaningful digital solutions. I've worked with clients ranging from startups to established businesses, always focusing on delivering value and exceeding expectations.</p>
-    <img src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'>
-    <h2>Passion for Innovation</h2>
-    <p>I'm constantly exploring new technologies and methodologies to stay at the cutting edge of web development. This passion for innovation drives me to create solutions that are not only current but also future-proof.</p>
-    <h2>Collaborative Approach</h2>
-    <p>I believe that the best results come from close collaboration with clients. I work as an extension of your team, understanding your goals and translating them into effective digital solutions.</p>
-    <h2>Quality Over Quantity</h2>
-    <p>Every project I take on receives my full attention and dedication. I believe in doing fewer things exceptionally well rather than many things adequately.</p>
-    <br>
-  </div>
+
 
   <input class='read' id='readSkills' type='radio' name='skillsRead'>
   <label class='closeBig' for='closeSkills'></label>
@@ -684,7 +676,7 @@
         
         this.isScrolling = true;
         
-        // Add a longer pause before transition
+        // Immediate transition for smoother experience
         setTimeout(() => {
           // Uncheck current planet
           this.planets[currentIndex].checked = false;
@@ -701,24 +693,24 @@
           
           // Update progress dots
           this.updateProgressDots();
-        }, 200); // 200ms pause before transition
+        }, 50); // Reduced to 50ms for faster response
         
-        // Much longer debounce for smoother experience
+        // Faster debounce for smoother experience
         clearTimeout(this.scrollTimeout);
         this.scrollTimeout = setTimeout(() => {
           this.isScrolling = false;
-        }, 2000); // Increased to 2 seconds
+        }, 600); // Reduced to 600ms for smoother responsiveness
       }
 
       addTransitionEffect() {
         const solar = document.querySelector('.solar');
-        solar.style.transition = 'transform 0.5s ease-in-out';
+        solar.style.transition = 'transform 0.2s ease-out';
         
-        // Add a subtle scale effect
-        solar.style.transform = 'scale(1.02)';
+        // Add a subtle scale effect for smoother transitions
+        solar.style.transform = 'scale(1.005)';
         setTimeout(() => {
           solar.style.transform = 'scale(1)';
-        }, 200);
+        }, 100);
       }
 
       addSmoothTransitions() {
@@ -733,7 +725,7 @@
         let scrollTimeout;
         let isScrolling = false;
         let scrollAccumulator = 0;
-        const scrollThreshold = 100; // Increased threshold for more deliberate scrolling
+        const scrollThreshold = 30; // Lower threshold for more responsive scrolling
         
         document.addEventListener('wheel', (e) => {
           e.preventDefault();
@@ -756,11 +748,11 @@
             // Reset accumulator
             scrollAccumulator = 0;
             
-            // Much longer debounce for smoother experience
+            // Faster debounce for smoother experience
             clearTimeout(scrollTimeout);
             scrollTimeout = setTimeout(() => {
               isScrolling = false;
-            }, 1500); // Increased to 1.5 seconds
+            }, 500); // Reduced to 500ms for smoother responsiveness
           }
         }, { passive: false });
         
